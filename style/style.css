@@ -1,0 +1,560 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.42857143;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Start Styling CSS */ 
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.top-menu-fixed {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #2b2b2b;
+	z-index: 999;
+}
+
+.top-menu {
+	min-height: 50px;
+	margin-bottom: 1%;
+}
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (min-width: 780px) {
+	
+	.container {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.container {
+		width: 100%;
+	}
+
+	.top-menu nav {
+		padding: 10px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.top-menu .container {
+		width: 100%;
+	}
+
+	.container {
+		width: 60%;
+	}
+}
+
+.top-menu .single-page-nav {
+	text-align: center;
+}
+
+.top-menu nav {
+	float: none;
+	padding: 25px;
+}
+
+a {
+	color: aliceblue;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+nav a {
+	background-color: grey;
+	padding: 15px 25px;
+	margin: 10px;
+	font-size: 2em;
+	line-height: 25px;
+}
+
+.banner {
+	border-bottom: 1px solid #2b2b2b;
+	background-color: #AB8570;
+}
+
+.middle-banner {
+	padding-top: 14%;
+	padding-bottom: 15%;
+}
+
+.banner-content {
+	text-align: center;
+	color: whitesmoke;
+}
+
+.banner-content h1 {
+	font-size: 6em;
+}
+
+.banner-content h4 {
+	font-size: 4em;
+}
+
+main {
+	padding-top: 70px;
+}
+
+.about-three-card {
+	height: 100%;
+}
+
+.aboutus-center-content {
+	width: 100%;
+	text-align: center;
+}
+
+.about-background-color {
+	width: 33.33333%;
+	float: left;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
+}
+
+.about-content {
+	background-color: #f2f2f2;
+	padding-bottom: 8%;
+}
+
+.image-about {
+	background-color: #923548;
+	max-width: 100%;
+	height: 180px;
+	vertical-align: middle;
+}
+
+.test-about-left {
+	text-align: left;
+}
+
+.test-about-left h2 {
+	padding: 0 20px;
+	font-size: 2em;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.test-about-left p {
+	padding: 0 20px 35px;
+	color: #333;
+	margin-top: 15px;
+	font-size: 14px;
+	line-height: 1.6em;
+}
+
+.button-green {
+	background-color: lightgreen;
+	color: #f2f2f2;
+	font-size: 2em;
+	border-radius: 8px;
+	padding: 10px;
+}
+
+.button-blue {
+	background-color: lightskyblue;
+	color: #f2f2f2;
+	font-size: 2em;
+	border-radius: 8px;
+	padding: 10px;
+}
+
+.button-red {
+	background-color: lightcoral;
+	color: #f2f2f2;
+	font-size: 2em;
+	border-radius: 8px;
+	padding: 10px;
+}
+
+.about-two-big-card {
+	margin: 60px 0;
+}
+
+.blog {
+	width: 50%;
+	float: left;
+	padding-left: 1.5%;
+	padding-right: 1.5%;
+}
+
+.blog-content {
+	background-color: #f2f2f2;
+	padding-bottom: 65px;
+	margin: 0px auto;
+	position: relative;
+}
+
+.blog-image {
+	background-color: #FABD6A;
+	max-width: 100%;
+	height: 240px;
+}
+
+.blog-content h2 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: 700;
+	color: #666666;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.blog-content p {
+	padding: 0 20px 35px;
+	color: #333;
+	margin-top: 15px;
+	font-size: 14px;
+	line-height: 1.6em;
+}
+
+.read-more-button {
+	background-color: aliceblue;
+	border: 1px solid lightslategray;
+	border-radius: 10px;
+	padding: 10px 30px;
+	color: #2b2b2b;
+	font-size: 18px;
+}
+
+.read-more-button-position {
+	position: absolute;
+	left: 62%;
+}
+
+.service-area {
+	background-color: #769BB8;
+}
+
+.center-content {
+	text-align: center;
+}
+
+.middle-content {
+	width: 100%;
+	margin: 65px 0 85px;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.service-content h1 {
+	color: #fff;
+	text-transform: capitalize;
+	text-shadow: 2px 2px #aaa;
+	margin: 20px 0 20px;
+	font-size: 3em;
+}
+
+.service-content p {
+	color: #fff;
+	font-size: 2em;
+}
+
+.testimonial-area {
+	margin: 60px 0;
+}
+
+.testimoni {
+	width: 25%;
+	float: left;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.testimoni-content {
+	background-color: #f2f2f2;
+	height: 500px;
+	max-width: 260px;
+	margin: 0 auto 30px;
+}
+
+.image-testi {
+	background-color: #EEB909;
+	max-width: 100%;
+	height: 260px;
+	border: none;	
+}
+
+.testimoni-content h2 {
+	color: #666;
+	font-size: 2em;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.testimoni-content p {
+	padding: 10px 20px;
+	text-align: left;
+	font-size: 14px;
+	line-height: 1.6em;
+}
+
+.testimoni-big-column {
+	width: 100%;
+	float: left;
+	padding-left: 1%;
+	padding-right: 1%;
+	position: relative;
+	min-height: 1px;
+}
+
+.testimoni-box {
+	background-color: #f2f2f2;
+	max-width: 1140px;
+	width: 100%;
+}
+
+.image-testi-box {
+	background-color: #FC8C76;
+	max-width: 100%;
+	height: 434px;
+}
+
+.testimoni-box-desc {
+	padding: 30px;
+	text-align: left;
+}
+
+.testimoni-box-desc h2 {
+	color: #666;
+	font-size: 2em;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.testimoni-box-desc p {
+	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 1.6em;
+}
+
+.testimoni-box-desc .tm-read-more {
+	background: #fff;
+	color: #2b2b2b;
+	border: 1px solid #cdcdcd;
+	border-radius: 10px;
+	display: inline-block;
+	font-size: 18px;
+	padding: 10px 30px;
+	text-transform: capitalize;
+	margin-top: 15px;
+}
+
+.contact-section {
+	background-color: #9BBED1;
+}
+
+.contact-section .container {
+	width: 60%;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact-area {
+	height: 100%;
+	padding-top: 80px;
+	padding-bottom: 60px;
+}
+
+.contact-text {
+	width: 100%;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-left: 1%;
+	padding-right: 1%;
+	text-align: center;
+}
+
+.contact-text h1 {
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 4em;
+	font-weight: 700;
+	text-shadow: 2px 2px #333;	
+}
+
+.contact-coloum {
+	width: 100%;
+	float: left;
+	padding-left: 1%;
+	padding-right: 1%;
+	position: relative;
+	min-height: 1px;
+}
+
+.contact-coloum p {
+	background: rgba(242, 242, 242, 0.4);
+	border-radius: 5px;
+	color: #000;
+	font-size: 2em;
+	margin-bottom: 20px;
+	padding: 20px 15px;
+	line-height: 1.6em;
+}
+
+.form-fiture {
+	width: 100%;
+	float: left;
+	position: relative;
+	padding-left: 2%;
+	padding-right: 2%;
+	min-height: 1px;
+}
+
+.form-fiture-col {
+	width: 50%;
+	float: left;
+}
+
+.form-left {
+	padding-left: 0;
+	padding-right: 2%;
+}
+
+.form-right {
+	padding-left: 2%;
+	padding-right: 0;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.input-text {
+	color: #000;
+	border: none;
+	border-radius: 5px;
+	background: rgba(242, 242, 242, 0.4);
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.6em;
+	margin-bottom: 15px;
+}
+
+textarea.input-text {
+	height: auto;
+}
+
+.btn-send {
+	color: #fff;
+	background-color: #262628;
+	border-color: #8c8c8c;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	border-radius: 10px;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	touch-action: manipulation;
+}
+
+
+/* End Styling CSS */
+
+
+/* Clear Fix */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }

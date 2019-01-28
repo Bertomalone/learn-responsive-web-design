@@ -1,0 +1,80 @@
+@media screen and (max-width: 780px) {
+    .read-more-button-position {
+        left: 60%;
+    }
+    
+    .read-more-button {
+        padding: 10px 20px;
+    }
+
+    .banner-content h1 {
+        font-size: 3em;
+    }
+    
+    .banner-content h4 {
+        font-size: 2em;
+    }
+
+    .test-about-left p {
+        font-size: 12px;
+        padding-bottom: 25px;
+    }
+
+    .blog-content p {
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+
+    .service-content h1 {
+        font-size: 2.4em;
+    }
+
+    .service-content p {
+        font-size: 1.6em;
+    }
+
+    .testimoni-content p {
+        font-size: 14px;
+    }
+
+    .testimoni {
+        width: 50%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .testi-one {
+        margin-left: 90px;
+        margin-right: 10px;
+    }
+
+    .testi-two {
+        margin-left: 10px;
+        margin-right: 90px;
+    }
+
+    .testimoni-big-column {
+        width: 74%;
+        margin-left: 13%;
+        margin-right: 13%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .contact-section .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 760px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .top-menu nav {
+        padding: 20px;
+    }
+}
