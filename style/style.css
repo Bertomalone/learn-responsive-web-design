@@ -82,33 +82,6 @@ body {
 	margin-right: auto;
 }
 
-@media screen and (min-width: 780px) {
-	
-	.container {
-		width: 100%;
-	}
-}
-
-@media screen and (min-width: 992px) {
-	.container {
-		width: 100%;
-	}
-
-	.top-menu nav {
-		padding: 10px;
-	}
-}
-
-@media screen and (min-width: 1200px) {
-	.top-menu .container {
-		width: 100%;
-	}
-
-	.container {
-		width: 60%;
-	}
-}
-
 .top-menu .single-page-nav {
 	text-align: center;
 }
@@ -412,7 +385,7 @@ main {
 }
 
 .contact-section .container {
-	width: 60%;
+	max-width: 750px;
 	padding-left: 1%;
 	padding-right: 1%;
 	margin-left: auto;
@@ -524,6 +497,59 @@ textarea.input-text {
 	vertical-align: middle;
 	cursor: pointer;
 	touch-action: manipulation;
+}
+
+@media screen and (min-width: 780px) {
+	.container {
+		width: 100%;
+	}
+
+	.testimoni {
+		width: 50%;
+	}
+	
+	.testimoni-content {
+		max-width: 433px;
+		margin: 10px 20px;
+	}
+	
+}
+
+@media screen and (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+	
+	.testimonial-area .container {
+		width: 100%;
+	}
+
+	.top-menu nav {
+		padding: 25px;
+	}
+
+	.testimoni {
+		width: 25%;
+	}
+
+	.testimoni-content {
+		max-width: 260px;
+		margin: 0 auto 30px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.top-menu .container {
+		width: 100%;
+	}
+
+	.testimonial-area .container {
+		width: 1170px;
+	}
+
+	.container {
+		width: 1170px;
+	}
 }
 
 

@@ -58,11 +58,11 @@
     }
 
     .testimoni-big-column {
-        width: 74%;
-        margin-left: 13%;
-        margin-right: 13%;
-        padding-left: 0;
-        padding-right: 0;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .contact-section .container {
@@ -90,6 +90,9 @@
 }
 
 @media screen and (min-width: 1200px) {
-    
+    .read-more-button-position {
+        padding: 10px 30px;
+        float: right;
+    }
 }
 
